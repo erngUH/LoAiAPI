@@ -1,0 +1,178 @@
+{
+    "alwayson_scripts": {
+      "Comments": {
+        "args": []
+      },
+      "ControlNet": {
+        "args": [
+          {
+            "advanced_weighting": null,
+            "batch_images": "",
+            "control_mode": "Balanced",
+            "enabled": true,
+            "guidance_end": 1,
+            "guidance_start": 0,
+            "hr_option": "Both",
+            "image": null,
+            "inpaint_crop_input_image": false,
+            "input_mode": "simple",
+            "is_ui": true,
+            "loopback": false,
+            "low_vram": false,
+            "model": "controlnet11Models_softedge [f616a34f]",
+            "module": "softedge_pidinet",
+            "output_dir": "",
+            "pixel_perfect": true,
+            "processor_res": 512,
+            "resize_mode": "Crop and Resize",
+            "save_detected_map": true,
+            "threshold_a": -1,
+            "threshold_b": -1,
+            "weight": 0.4
+          },
+          {
+            "advanced_weighting": null,
+            "batch_images": "",
+            "control_mode": "Balanced",
+            "enabled": false,
+            "guidance_end": 1,
+            "guidance_start": 0,
+            "hr_option": "Both",
+            "image": null,
+            "inpaint_crop_input_image": false,
+            "input_mode": "simple",
+            "is_ui": true,
+            "loopback": false,
+            "low_vram": false,
+            "model": "None",
+            "module": "none",
+            "output_dir": "",
+            "pixel_perfect": false,
+            "processor_res": -1,
+            "resize_mode": "Crop and Resize",
+            "save_detected_map": true,
+            "threshold_a": -1,
+            "threshold_b": -1,
+            "weight": 1
+          },
+          {
+            "advanced_weighting": null,
+            "batch_images": "",
+            "control_mode": "Balanced",
+            "enabled": false,
+            "guidance_end": 1,
+            "guidance_start": 0,
+            "hr_option": "Both",
+            "image": null,
+            "inpaint_crop_input_image": false,
+            "input_mode": "simple",
+            "is_ui": true,
+            "loopback": false,
+            "low_vram": false,
+            "model": "None",
+            "module": "none",
+            "output_dir": "",
+            "pixel_perfect": false,
+            "processor_res": -1,
+            "resize_mode": "Crop and Resize",
+            "save_detected_map": true,
+            "threshold_a": -1,
+            "threshold_b": -1,
+            "weight": 1
+          }
+        ]
+      },
+      "Extra options": {
+        "args": []
+      },
+      "Hypertile": {
+        "args": []
+      },
+      "Refiner": {
+        "args": [
+          false,
+          "",
+          0.8
+        ]
+      },
+      "Sampler": {
+        "args": [
+          20,
+          "DPM++ 2M",
+          "Karras"
+        ]
+      },
+      "Seed": {
+        "args": [
+          -1,
+          false,
+          -1,
+          0,
+          0,
+          0
+        ]
+      },
+      "Soft Inpainting": {
+        "args": [
+          false,
+          1,
+          0.5,
+          4,
+          0,
+          0.5,
+          2
+        ]
+      }
+    },
+    "batch_size": 1,
+    "cfg_scale": 8,
+    "comments": {},
+    "denoising_strength": 0.3,
+    "disable_extra_networks": false,
+    "do_not_save_grid": true,
+    "do_not_save_samples": true,
+    "height": 1408,
+    "init_images": [
+      "base64image placeholder"
+    ],
+    "initial_noise_multiplier": 1,
+    "inpaint_full_res": 0,
+    "inpaint_full_res_padding": 32,
+    "inpainting_fill": 1,
+    "inpainting_mask_invert": 0,
+    "mask_blur": 4,
+    "mask_blur_x": 4,
+    "mask_blur_y": 4,
+    "mask_round": true,
+    "n_iter": 1,
+    "negative_prompt": "negative",
+    "override_settings": {},
+    "override_settings_restore_afterwards": true,
+    "prompt": "positive",
+    "resize_mode": 1,
+    "restore_faces": false,
+    "s_churn": 0,
+    "s_min_uncond": 0,
+    "s_noise": 1,
+    "s_tmax": null,
+    "s_tmin": 0,
+    "sampler_name": "DPM++ 2M",
+    "scheduler": "Karras",
+    "script_args": [
+      "<p style=\"margin-bottom:0.75em\">Will upscale the image by the selected scale factor; use width and height sliders to set tile size</p>",
+      128,
+      3,
+      1.5
+    ],
+    "script_name": "sd upscale",
+    "seed": 2912284124,
+    "seed_enable_extras": true,
+    "seed_resize_from_h": -1,
+    "seed_resize_from_w": -1,
+    "steps": 20,
+    "styles": [],
+    "subseed": 1254940173,
+    "subseed_strength": 0,
+    "tiling": false,
+    "width": 960
+  }
